@@ -1,4 +1,4 @@
-# Time Analyer
+# Time Analyzer
 
 This short python script allows generating pixel and pie plots from [Toggl Track](https://toggl.com/track/) CSV data.
 
