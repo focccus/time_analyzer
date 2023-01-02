@@ -1,0 +1,6 @@
+data.csv
+out/*
+!out/final.jpg
+__pycache__
+venv
+config-real.py
