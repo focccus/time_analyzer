@@ -1,6 +1,8 @@
 data.csv
 out/*
 !out/final.jpg
+!out/final.pdf
+!out/full.bmp
 __pycache__
 venv
 config-real.py
