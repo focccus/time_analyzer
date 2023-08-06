@@ -6,3 +6,5 @@ out/*
 __pycache__
 venv
 config-real.py
+.env
+**/*.csv

@@ -9,14 +9,14 @@ end_date = date(2023,1,1)
 weeks = (end_date - start_date).days // 7
 
 # vertical pixels per day
-dayHeight = 64
+dayHeight = 128
 # hour range which get less pixels
 reducedHours = (2,7)
 reducedHourCount = reducedHours[1] - reducedHours[0]
 # horizontal pixels per normal hour
-pixelsPerHour = 60 // 5
+pixelsPerHour = 60 // 3
 # horizontal pixels per reduced hour
-pixelsPerReducedHour = 60 // 15
+pixelsPerReducedHour = 60 // 10
 
 # total pixels per day
 pixelsPerDay = (24 - reducedHourCount) * pixelsPerHour + reducedHourCount * pixelsPerReducedHour

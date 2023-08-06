@@ -61,12 +61,13 @@ if __name__ == '__main__':
 
         draw.rectangle((minX,y, maxX+1, y + dayHeight - 1),  fill=(red,green,blue))
 
-        if row.end_date != row.start_date:
+        if row.end_date != row.start_date and row.end_date <= end_date:
             dayIndex += 1
             y = (dayIndex // 7 ) * dayHeight
             xDay = (dayIndex % 7) * pixelsPerDay
             minX = xDay
             maxX = xDay + getPixelForTime(row.end_time)
+            draw.rectangle((minX,y, maxX+1, y + dayHeight - 1),  fill=(red,green,blue))
 
 
     im = plt.imshow(img)
